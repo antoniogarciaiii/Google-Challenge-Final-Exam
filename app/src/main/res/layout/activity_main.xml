@@ -72,6 +72,7 @@
             as they choose their answer-->
         <RadioGroup
             android:layout_width="match_parent"
+            android:id="@+id/q1_group"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -177,7 +178,7 @@
             android:textSize="16dp" />
 
         <EditText
-            android:id="@+id/q3_answer"
+            android:id="@+id/q3_user_answer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="16dp"
@@ -237,7 +238,7 @@
             android:layout_margin="16dp"
             android:src="@drawable/question5" />
         <EditText
-            android:id="@+id/question_5_answer"
+            android:id="@+id/q5_user_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
