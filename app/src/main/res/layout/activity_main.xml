@@ -115,7 +115,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:text="2. question two"
+            android:text="2. Which of these are primitive data types?"
             android:textSize="16dp" />
 
     </LinearLayout>
