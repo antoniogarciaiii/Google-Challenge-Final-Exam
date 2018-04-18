@@ -3,8 +3,8 @@ Final Project for Grow With Google Challenge Scholarship: Android Basics. Made s
 
 ## Mockup and Screenshots
 ![Mockup done on Balsamiq Mockups](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/New%20Mockup%201.png)
-!Screenshot00](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172703.png)
-!Screenshot01](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172658.png)
+![Screenshot00](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172703.png)
+![Screenshot01](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172658.png)
 
 
 ## Project Overview
