@@ -1,12 +1,22 @@
 # Final Exam - Quiz App
 Final Project for Grow With Google Challenge Scholarship: Android Basics. Made simple quiz app with different forms of answer entry, and score count.
 
-## Screenshots and Mockups
+## Mockup and Screenshots
+![Mockup done on Balsamiq Mockups](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/New%20Mockup%201.png)
+!Screenshot00](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172703.png)
+!Screenshot01](https://github.com/antoniogarciaiii/Google-Challenge-Final-Exam/raw/part2/Screenshot_20180418-172658.png)
+
 
 ## Project Overview
-The Quiz App project is a chance for you to combine and practice everything you learned in this section of the course. You will be making your own Android app - taking it from the idea stage to building out the full app. You can share your app with family and friends, as well as with other students in this course.
+The Quiz App project is a chance for the student to combine and practice everything you learned in this section of the course. The student will be making their own Android app - taking it from the idea stage to building out the full app. The student can share their app with family and friends, as well as with other students in this course.
 
-The goal is to create an educational app that quizzes a user about a certain topic of your choice. We want you to be creative about how you accomplish this. It’s up to you what the quiz questions will be about and how you want to present them to your user. (We recommend about 4 - 10 quiz questions for a reasonable scope of your app).
+The goal is to create an educational app that quizzes a user about a certain topic. The student should be creative about how to accomplish this. It’s up to the student what the quiz questions will be about and how to present them to the end user. (4 - 10 quiz questions are recommended for a reasonable scope of the app).
+
+### Developer Notes
+* Because I may replicate this for my students at [Latinx Code](http://latinxcode.com), I decided to make the quiz geared towards those who are beginning to learn Java, much like myself.
+* After testing the layout on a friend, I decided upon the current layout for the checkboxes. 
+* I edited the styles.xml file to reflect the color palette I made for Latinx Code.
+
 ### Skills Demonstrated
 
 * Planning an app app design before coding.
