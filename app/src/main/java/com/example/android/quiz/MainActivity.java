@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     final int q1_Answer = R.id.q1_radiobutton_d;
     /* question 2 will be handled by its own method, because it's a
        checkbox w/2 answers that needs to work off a conditional statement */
-    final String q3_Answer = "Development";
+    final String q3_Answer = "development";
     final int q4_Answer = R.id.q4_b;
     final String q5_Answer = "calculateTip";
 
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     // gets student's name, checks answers, displays score
     public void checkAnswers(View view){
-        String studentName = findViewById(R.id.name_field).toString();
 
         checkQuestion1();
         checkQuestion2();
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         checkQuestion4();
         checkQuestion5();
 
-        String toastMessage = studentName + "you got " + score + "%";
+        String toastMessage = "you got " + score + "%";
         Toast grades = Toast.makeText(MainActivity.this, toastMessage, Toast.LENGTH_LONG);
         grades.show();
     }
@@ -66,27 +65,29 @@ public class MainActivity extends AppCompatActivity {
 //        return false; // it's false, but we're not going to do anything with it. we're just kinda gonna move on.
     }
 
-    // method to check question 2. i found an example online which makes a lovely use of conditional + AND statements
+    // method to check question 2. the idea is to gather their states, one by one, then check them.
     private void checkQuestion2() {
         CheckBox q2CA = (CheckBox) findViewById(R.id.q2_a);
         CheckBox q2CB = (CheckBox) findViewById(R.id.q2_b);
         CheckBox q2CC = (CheckBox) findViewById(R.id.q2_c);
         CheckBox q2CD = (CheckBox) findViewById(R.id.q2_d);
-        // if, and only if, A is checked, AND B is checked, AND C is not checked, AND C is not checked, return true.
-        // the true value will be used when checking answers.
+        // if, and only if: A is checked, AND B is checked, AND C is not checked, AND C is not checked, return true.
+        // if true is returned, add 20 to score.
         if (q2CA.isChecked() && q2CB.isChecked() && !q2CC.isChecked() && !q2CD.isChecked()) {
             score += 20;
         }
     }
 
     // method to check question 3.
-    private void checkQuestion3() {
-        //EditText q3UserAnswer = (EditText) findViewById(R.id.q3_user_answer);
-        String q3UserAnswer = findViewById(R.id.q3_user_answer).toString();
-        if (q3UserAnswer == q3_Answer) {
+    public void checkQuestion3() {
+        //extract value from q3 answer field, convert to string
+        EditText q3UserAnswerET = findViewById(R.id.q3_user_answer);
+        String q3UserAnswer = q3UserAnswerET.getText().toString();
+        //convert to lowercase, to make it more user friendly for this question.
+        //question 5 needs to be correct with capitalization, but this one is fine.
+        q3UserAnswer = q3UserAnswer.toLowerCase();
+        if (q3UserAnswer.equals(q3_Answer)){
             score += 20;
-            //do we really need an else statement? can't we just have it move on if it's not right?
-            //not getting the 20 points is penalty enough. i have a feeling we're just gonna have to void this.
         }
     }
 
@@ -103,9 +104,10 @@ public class MainActivity extends AppCompatActivity {
 
     // method to check question 5.
     private void checkQuestion5() {
-        String q5UserAnswer = findViewById(R.id.q5_user_answer).toString();
-        // this should grab the text and turn it into a string, so that we can check it w/the answer
-        if (q5UserAnswer == q5_Answer) {
+        //same logic as question 3
+        EditText q5UserAnswerET = findViewById(R.id.q5_user_answer);
+        String q5UserAnswer = q5UserAnswerET.getText().toString();
+        if (q5UserAnswer.equals(q5_Answer)) {
             score += 20;
         }
     }

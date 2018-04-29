@@ -39,15 +39,6 @@
             android:maxLines="2"
             android:text="When finished with survey, press submit button to send results." />
 
-        <EditText
-            android:id="@+id/name_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="8dp"
-            android:hint="Name" />
-
         <View
             android:layout_width="fill_parent"
             android:layout_height="4dp"
@@ -174,8 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:inputType="textCapWords"
-            android:text="3. Fill in the blank.&#10;IDE stands for &quot;integrated _______ environment&quot;\nBe sure to capitalize the first letter of your answer"
+            android:text="3. Fill in the blank.&#10;IDE stands for \n&quot;integrated _______ environment&quot;"
             android:textSize="16dp" />
 
         <EditText
@@ -185,6 +175,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
+            android:inputType="text"
             android:hint="Your answer" />
 
         <View
@@ -201,8 +192,8 @@
             android:textSize="16dp" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
             android:id="@+id/q4_group"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:orientation="vertical">
@@ -261,8 +252,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:text="get grade"
-            android:onClick="checkAnswers"/>
+            android:onClick="checkAnswers"
+            android:text="get grade" />
 
     </LinearLayout>
 
