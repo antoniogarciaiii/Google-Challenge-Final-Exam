@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
     // method to check question 5.
     private void checkQuestion5() {
-        //same logic as question 3
+        //same logic as question 3.
         EditText q5UserAnswerET = findViewById(R.id.q5_user_answer);
         String q5UserAnswer = q5UserAnswerET.getText().toString();
         if (q5UserAnswer.equals(q5_Answer)) {
