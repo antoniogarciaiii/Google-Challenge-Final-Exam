@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     int score = 0;
 
     //each question adds 20 to the score--as in 20%, 'cause basic math.
-    // finals, 'cause they don't change
+    // finals, because they don't change
     final int q1_Answer = R.id.q1_radiobutton_d;
     /* question 2 will be handled by its own method, because it's a
        checkbox w/2 answers that needs to work off a conditional statement */
